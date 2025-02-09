@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FarmersStop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    
+    </header>
+    <div class="min-h-screen flex flex-col">
+      <header class="bg-green-700 text-white">
+        <div class="container">
+          <a href="/" class="logo">Farm Store</a>
+          <div class="search-container">
+            <input
+              type="search"
+              placeholder="Search for products..."
+              class="search-input"
+            />
+            <i data-lucide="search" class="search-icon"></i>
+          </div>
+          <nav>
+            <a href="login page.html" class="nav-link">
+              <i data-lucide="user"></i>
+              <span class="hidden-mobile">Account</span>
+            </a>
+            <a href="cart.html" class="nav-link">
+              <i data-lucide="shopping-cart"></i>
+              <span class="hidden-mobile">Cart</span>
+            </a>
+          </nav>
+        </div>
+      </header>
+      <header>
+        <nav class="navigation">
+            <a href="#" class="navlinks">Home</a>
+            <a href="equipment.html" class="navlinks">Equipments</a>
+            <a href="fertilizers.html" class="navlinks">Fertilizers</a>
+            <a href="contact us.html" class="navlinks">Contact Us</a>
+            <a href="aboutus.html" class="navlinks">About Us</a>
+        </nav>
+    </header>
+      
+
+      <section class="banner">
+        <video autoplay loop muted playsinline>
+          <source src="clip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="banner-content">
+          <h2>Fresh Produce, Delivered Daily</h2>
+          <p>Experience the farm-to-table difference with Farm Store</p>
+          <a href="#featured-products" class="btn btn-primary">Shop Now</a>
+        </div>
+      </section>
+
+      <main>
+        <section class="hero bg-green-100">
+          <div class="container">
+            <div class="hero-content">
+              <h1>Fresh from the Farm to Your Table</h1>
+              <p>
+                Discover the best local produce and support your community
+                farmers.
+              </p>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+            <div class="hero-image">
+              <img src="fresh.jpeg" alt="Fresh produce" />
+            </div>
+          </div>
+        </section>
+
+        <section class="categories">
+          <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+              <a href="vegetable.html" class="category-card">
+                <img src="vegetables.jpeg" alt="Vegetables" />
+                <h3>Vegetables</h3>
+              </a>
+              <a href="fruits.html" class="category-card">
+                <img src="fruits.jpeg" alt="Fruits" />
+                <h3>Fruits</h3>
+              </a>
+              <a href="Dairy.html" class="category-card">
+                <img src="dairy.jpeg" alt="Dairy" />
+                <h3>Dairy</h3>
+              </a>
+              <a href="Grains.html" class="category-card">
+                <img src="grains.jpeg" alt="Grains" />
+                <h3>Grains</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-products bg-gray-100" id="featured-products">
+          <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+              <div class="product-card">
+                <img src="apple.jpeg" alt="Organic Apples" />
+                <h3>Organic Apples</h3>
+                <p class="price">80rs/KG</p>
+                <button class="btn btn-secondary">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="milk (1).jpeg" alt="Fresh Milk" />
+                <h3>Fresh Milk</h3>
+                <p class="price">29rs/500ml</p>
+                <button class="btn btn-secondary">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="eggs.jpeg" alt="Free-Range Eggs" />
+                <h3>Free-Range Eggs</h3>
+                <p class="price">299Rs</p>
+                <button class="btn btn-secondary">Add to Cart</button>
+              </div>
+              <div class="product-card">
+                <img src="fertilizers.jpeg" alt="Fertilizers" />
+                <h3>Fertilizers</h3>
+                <p class="price">999Rs</p>
+                <button class="btn btn-secondary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-green-800 text-white">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-section">
+              <h3>Farm Store</h3>
+              <p>Bringing fresh, local produce directly to your doorstep.</p>
+            </div>
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Customer Service</h4>
+              <ul>
+                <li><a href="/shipping">Shipping Information</a></li>
+                <li><a href="/returns">Returns & Refunds</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"
+                  ><i data-lucide="facebook"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i data-lucide="twitter"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i data-lucide="instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Farm Store. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

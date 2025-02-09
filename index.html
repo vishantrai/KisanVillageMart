@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisan Village</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="kisan.ico" type="image/x-icon">
+    <style>
+        .ac {
+            position: absolute;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="ac" onclick="showCart()">🛒 View Cart</button>
+
+    <h2>KisanVillageMart</h2>
+    <header>
+        <h1>KisanVillageMart</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="equipment.html">Equipments</a>
+            <a href="fertilizers.html">Fertilizers</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Hot Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="grains-ears-wheat-25858561.webp" width="180" alt="Wheat">
+                <h3>Organic Wheat</h3>
+                <p>Price: ₹5000 per quintal</p>
+                <button onclick="addToCart('Organic Wheat', 5000)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="vegetables.jpg" width="180" alt="vegetables">
+                <h3>Fresh Vegetables</h3>
+                <p>Price: ₹500 per box</p>
+                <button onclick="addToCart('Fresh Vegetables', 500)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="fertilizers.jpg" width="180" alt="fertilizers">
+                <h3>Fertilizer</h3>
+                <p>Price: ₹1200 per bag</p>
+                <button onclick="addToCart('Fertilizer', 1200)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="vermi.jpg" width="180" alt="">
+                <h3>Vermi-Compost</h3>
+                <p>Price: ₹2000 per bag</p>
+                <button onclick="addToCart('Vermi-Compost', 2000)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="equipments">
+        <h2>Agricultural Equipments</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="tractor.jpg" width="180" alt="Tractor" />
+                <h3>Tractor</h3>
+                <p>Price: ₹500,000</p>
+                <p>A powerful tractor for all your farming needs.</p>
+                <button onclick="addToCart('Tractor', 500000)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="plough.jpg" width="170" alt="Plough" />
+                <h3>Plough</h3>
+                <p>Price: ₹25,000</p>
+                <p>High-quality plow for effective tilling.</p>
+                <button onclick="addToCart('Plough', 25000)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="seeder.jpg" width="180" alt="Seeder" />
+                <h3>Seeder</h3>
+                <p>Price: ₹15,000</p>
+                <p>Efficient seed planting equipment for better yield.</p>
+                <button onclick="addToCart('Seeder', 15000)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="sprayer.jpg" width="180" alt="Sprayer" />
+                <h3>Sprayer</h3>
+                <p>Price: ₹12,000</p>
+                <p>Ideal for spraying fertilizers and pesticides.</p>
+                <button onclick="addToCart('Sprayer', 12000)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="chisels.jpg" width="180" alt="Chisels" />
+                <h3>Chisels</h3>
+                <p>Price: ₹122,000</p>
+                <p>Chisels are for your easy tilling</p>
+                <button onclick="addToCart('Chisels', 122000)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="trailer.jpg" width="180" alt="Trailer" />
+                <h3>Trailer</h3>
+                <p>Price: ₹120,000</p>
+                <p>Useful for transporting goods.</p>
+                <button onclick="addToCart('Trailer', 120000)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

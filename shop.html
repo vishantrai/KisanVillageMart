@@ -1,0 +1,131 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Dropdown Shop Menu</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f9f9f9;  
+            margin: 0;  
+            padding: 0;  
+        }  
+        .navbar {  
+            background-color: #e0e0e0;  
+            padding: 10px;  
+            text-align: center;  
+        }  
+        .navbar a {  
+            text-decoration: none;  
+            color: #2e2b8a;  
+            margin: 0 15px;  
+            font-weight: bold;  
+            position: relative;  
+        }  
+        .dropdown {  
+            display: inline-block;  
+        }  
+        .dropdown-content {  
+            display: none;  
+            position: absolute;  
+            background-color: #ffffff;  
+            min-width: 800px;  
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);  
+            z-index: 1;  
+            padding: 20px;  
+        }  
+        .dropdown:hover .dropdown-content {  
+            display: grid;  
+            grid-template-columns: repeat(4, 1fr);  
+        }  
+        .category {  
+            margin-right: 20px;  
+        }  
+        .category-title {  
+            font-weight: bold;  
+            color: #000000;  
+            margin-bottom: 10px;  
+            border-bottom: 2px solid #000000;  
+            padding-bottom: 5px;  
+        }  
+        .item {  
+            margin: 5px 0;  
+            color: #555;  
+        }  
+    </style>  
+</head>  
+<body>  
+
+<div class="navbar">  
+    <a href="#">HOME</a>  
+    <div class="dropdown">  
+        <a href="#">SHOP &#9660;</a>  
+        <div class="dropdown-content">  
+            <div class="category">  
+                <div class="category-title">Chemicals</div>  
+                <a class="item" href="#">Weed Killers</a>  
+                <a class="item" href="#">Grassland & Agri</a>  
+                <a class="item" href="#">Home & Garden</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">Dairy Products</div>  
+                <a class="item" href="#">Calf Equipment</a>  
+                <a class="item" href="#">Dairy Hygiene</a>  
+                <a class="item" href="#">General Equipment</a>  
+                <a class="item" href="#">Heat Detection</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">Farm Clothing</div>  
+                <a class="item" href="#">Clothing Accessories</a>  
+                <a class="item" href="#">Wellington Boots</a>  
+                <a class="item" href="#">Gloves</a>  
+                <a class="item" href="#">Rain Wear</a>  
+                <a class="item" href="#">Workwear</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">Fencing</div>  
+                <a class="item" href="#">Energizers</a>  
+                <a class="item" href="#">Fencing Accessories</a>  
+                <a class="item" href="#">Insulators</a>  
+                <a class="item" href="#">Polywire and Polytape</a>  
+                <a class="item" href="#">Strainers</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">Hardware</div>  
+                <a class="item" href="#">Aluscraper</a>  
+                <a class="item" href="#">Electrical</a>  
+                <a class="item" href="#">General Hardware</a>  
+                <a class="item" href="#">Poultry Equipment</a>  
+                <a class="item" href="#">Silage Bale Netting</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">Rodent Control</div>  
+                <a class="item" href="#">Bait Blocks</a>  
+                <a class="item" href="#">Bait Boxes</a>  
+                <a class="item" href="#">Grain Bait</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">Veterinary</div>  
+                <a class="item" href="#">Calf Products</a>  
+                <a class="item" href="#">Dry Cow Therapy</a>  
+                <a class="item" href="#">Fluke and Worm Control</a>  
+                <a class="item" href="#">General Veterinary Products</a>  
+                <a class="item" href="#">Lice and Fly Control</a>  
+                <a class="item" href="#">Mastitis and SCC treatment</a>  
+            </div>  
+            <div class="category">  
+                <div class="category-title">On Sale</div>  
+                <a class="item" href="#">Special Items</a>  
+                <a class="item" href="#">Discounted Products</a>  
+            </div>  
+        </div>  
+    </div>  
+    <a href="#">ABOUT US</a>  
+    <a href="#">NEWS</a>  
+    <a href="#">CONTACT US</a>  
+    <a href="#">MY ACCOUNT</a>  
+</div>  
+
+</body>  
+</html>

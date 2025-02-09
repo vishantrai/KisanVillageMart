@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agricultural Equipment - Best machinery for your farm">
+    <title>Agricultural Equipment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #28a745;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f0f0f0;
+            border-bottom: 2px solid #fff;
+        }
+
+        .hero {
+            background-color: #28a745;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .equipment-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            justify-items: center;
+        }
+        .add-to-cart {
+            background-color: #3b7a57;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2d5a41;
+        }
+
+
+        .equipment-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            padding: 20px;
+        }
+
+        .equipment-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .equipment-item h3 {
+            font-size: 22px;
+            color: #333;
+            margin: 20px 0 10px;
+        }
+
+        .equipment-item p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .equipment-item ul {
+            text-align: left;
+            font-size: 14px;
+            color: #555;
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .equipment-item ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="store.html">Home</a></li>
+                <li><a href="equipment.html" class="active">Equipment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Explore Our Agricultural Equipment</h1>
+        <p>High-performance machinery designed to optimize your farm's productivity.</p>
+    </section>
+
+    <section class="equipment-list">
+        <div class="equipment-item">
+            <img src="tractor.jpg" alt="Tractor">
+            <h3>Tractor</h3>
+            <p>Our tractors are designed for durability and power, making them perfect for large-scale farming operations.</p>
+            
+            <ul>
+                <li>Engine Power: 150-500 HP</li>
+                <li>Fuel Efficient</li>
+                <li>4WD for better traction</li>
+                <li>Advanced GPS and AutoSteer Technology</li>
+                <li>Hydraulic Lift Capacity: 2,000 kg</li>
+                <li>Ideal for plowing, hauling, and tilling</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="equipment-item">
+            <img src="harvester.webp" alt="Harvester">
+            <h3>Harvester</h3>
+            <p>Our harvesters provide the highest efficiency in crop collection, reducing time and labor costs.</p>
+            <ul>
+                <li>High capacity grain tank: 14,000L</li>
+                <li>Variable Speed Header</li>
+                <li>Advanced cleaning system</li>
+                <li>Reduced fuel consumption</li>
+                <li>Adaptive harvesting technology for all crops</li>
+                <li>Comfortable cab with advanced operator controls</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="equipment-item">
+            <img src="plough.jpg" alt="Plow">
+            <h3>Plow</h3>
+            <p>Our plows are engineered to break up tough soil and prepare the land for seeding.</p>
+            <ul>
+                <li>Adjustable depth for different soil types</li>
+                <li>Heavy-duty steel construction</li>
+                <li>Available in 2-6 furrow configurations</li>
+                <li>Quick-release moldboards</li>
+                <li>Improved fuel efficiency</li>
+                <li>Durable and resistant to wear</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="equipment-item">
+            <img src="sprayer.jpg" alt="Sprayer">
+            <h3>Sprayer</h3>
+            <p>Ensure optimal crop protection with our state-of-the-art sprayers, perfect for large fields and orchards.</p>
+            <ul>
+                <li>High precision spray control system</li>
+                <li>Spray width up to 36 meters</li>
+                <li>Variable rate application</li>
+                <li>Easy-to-use touchscreen interface</li>
+                <li>Improved nozzle technology for better coverage</li>
+                <li>Adjustable boom height</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="equipment-item">
+            <img src="baler.jpg" alt="Baler">
+            <h3>Baler</h3>
+            <p>Efficient and reliable balers designed to handle large volumes of hay and straw with ease.</p>
+            <ul>
+                <li>Produces compact bales (up to 1,200 kg)</li>
+                <li>Automatic tie and bale ejection</li>
+                <li>Durable construction for long-lasting performance</li>
+                <li>Hydraulic bale tensioning system</li>
+                <li>Perfect for both round and square bales</li>
+                <li>Adjustable bale density</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="equipment-item">
+            <img src="seeder.jpg" alt="Seeder">
+            <h3>Seeder</h3>
+            <p>Our seeders ensure precise planting and optimal crop growth, reducing seed wastage and improving yields.</p>
+            <ul>
+                <li>Seed rate adjustment for different crops</li>
+                <li>Built-in fertilizer applicator</li>
+                <li>Advanced seed metering system</li>
+                <li>Wide working width (up to 12 meters)</li>
+                <li>Easy calibration and operation</li>
+                <li>Precision planting technology</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="equipment-item">
+            <img src="trailer.jpg" alt="Loader">
+            <h3>Loader</h3>
+            <p>Versatile loaders that help you move heavy materials like soil, gravel, and farm produce.</p>
+            <ul>
+                <li>Load Capacity: 1,000 - 3,000 kg</li>
+                <li>Hydraulic lifting system</li>
+                <li>Available in wheeled and tracked models</li>
+                <li>Optional attachments: forks, buckets, grapples</li>
+                <li>Low maintenance and easy to operate</li>
+                <li>Adjustable boom height for better reach</li>
+            </ul>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AgroFarm Equipment. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

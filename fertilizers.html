@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fertilizers</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #3b7a57;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .fertilizer-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .fertilizer-card {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .fertilizer-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .fertilizer-card h3 {
+            font-size: 24px;
+            color: #3b7a57;
+            margin: 10px 0;
+        }
+
+        .fertilizer-card p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #3b7a57;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #2d5a41;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .cart-count {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="ac" onclick="showCart()">🛒 View Cart</button>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="equipment.html">Equipments</a>
+            <a href="fertilizers.html">Fertilizers</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <h1>KisanVillageMart</h1>
+        <div class="container">
+            <h1>Top 10 Fertilizers</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="fertilizer-list">
+            <!-- Fertilizer 1 -->
+            <div class="fertilizer-card" data-id="compost">
+                <img src="compost.jpeg" alt="Compost Fertilizer">
+                <h3>Compost</h3>
+                <p>Compost is an organic matter decomposed into a rich, nutrient-dense soil amendment that improves soil fertility and texture.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 2 -->
+            <div class="fertilizer-card" data-id="manure">
+                <img src="manure.jpeg" alt="Manure Fertilizer">
+                <h3>Manure</h3>
+                <p>Animal manure is a well-known organic fertilizer that provides nitrogen, phosphorus, and potassium to the soil. It also improves soil structure.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 3 -->
+            <div class="fertilizer-card" data-id="bonemeal">
+                <img src="bonemeal.webp" alt="Bone Meal Fertilizer">
+                <h3>Bone Meal</h3>
+                <p>Bone meal is a slow-release source of phosphorus and calcium, essential for root development and flowering in plants.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 4 -->
+            <div class="fertilizer-card" data-id="fishemulsion">
+                <img src="fishemulsion.jpg" alt="Fish Emulsion Fertilizer">
+                <h3>Fish Emulsion</h3>
+                <p>Fish emulsion is a fast-acting, liquid organic fertilizer rich in nitrogen, which promotes healthy growth and green foliage.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 5 -->
+            <div class="fertilizer-card" data-id="ammoniumnitrate">
+                <img src="ammoniumnitrate.jpeg" alt="Ammonium Nitrate Fertilizer">
+                <h3>Ammonium Nitrate</h3>
+                <p>Ammonium nitrate is a synthetic fertilizer that provides nitrogen to boost plant growth and is commonly used in agricultural settings.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 6 -->
+            <div class="fertilizer-card" data-id="superphosphate">
+                <img src="superphosphate.jpg" alt="Superphosphate Fertilizer">
+                <h3>Superphosphate</h3>
+                <p>Superphosphate is a synthetic fertilizer that provides phosphorus, which is crucial for root growth and flower development.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 7 -->
+            <div class="fertilizer-card" data-id="potassiumchloride">
+                <img src="potassiuum.jpg" alt="Potassium Chloride Fertilizer">
+                <h3>Potassium Chloride</h3>
+                <p>Potassium chloride is a widely used synthetic fertilizer that provides potassium, enhancing overall plant health and resistance to diseases.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 8 -->
+            <div class="fertilizer-card" data-id="kelpmeal">
+                <img src="kelp meal.jpeg" alt="Kelp Meal Fertilizer">
+                <h3>Kelp Meal</h3>
+                <p>Kelp meal is an organic fertilizer made from seaweed, packed with micronutrients and trace elements that enhance plant growth and resilience.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 9 -->
+            <div class="fertilizer-card" data-id="bloodmeal">
+                <img src="blood meal.jpg" alt="Blood Meal Fertilizer">
+                <h3>Blood Meal</h3>
+                <p>Blood meal is a high-nitrogen organic fertilizer, often used to promote lush foliage growth and enrich soil nitrogen content.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Fertilizer 10 -->
+            <div class="fertilizer-card" data-id="alfalfa">
+                <img src="alfalfa.jpg" alt="Alfalfa Meal Fertilizer">
+                <h3>Alfalfa Meal</h3>
+                <p>Alfalfa meal is an organic fertilizer that provides nitrogen, phosphorus, and potassium, along with trace minerals that improve plant health.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Cart Count -->
+        <div class="cart-count">
+            <h3>Items in Cart: <span id="cart-count">0</span></h3>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fertilizer Guide. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize the cart from local storage or as an empty object
+        let cart = JSON.parse(localStorage.getItem('cart')) || {};
+
+        // Update cart count in UI
+        function updateCartCount() {
+            const cartCount = Object.keys(cart).length;
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        // Handle adding an item to the cart
+        function addToCart(event) {
+            const card = event.target.closest('.fertilizer-card');
+            const fertilizerId = card.getAttribute('data-id');
+            
+            // If item is already in the cart, increment its quantity
+            if (cart[fertilizerId]) {
+                cart[fertilizerId].quantity += 1;
+            } else {
+                cart[fertilizerId] = {
+                    id: fertilizerId,
+                    quantity: 1
+                };
+            }
+
+            // Save updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update cart count
+            updateCartCount();
+        }
+
+        // Add event listeners to "Add to Cart" buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+
+        // Initial cart count update
+        updateCartCount();
+    </script>
+
+</body>
+</html>
